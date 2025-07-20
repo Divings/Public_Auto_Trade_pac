@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.2-1.el9
+- https://www.phpmyadmin.net
+-
+- ホスト: localhost
+- 生成日時: 2025 年 7 月 20 日 11:00
+- サーバのバージョン： 8.0.41
+- PHP のバージョン: 8.0.30
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="Trade" collation="utf8mb4_0900_ai_ci" charset="utf8mb4">
+            <pma:table name="bot_config">
+                CREATE TABLE `bot_config` (
+                  `key` varchar(64) NOT NULL,
+                  `value` varchar(64) NOT NULL,
+                  `ettc` varchar(255) NOT NULL,
+                  PRIMARY KEY (`key`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - データベース: 'Trade'
+    -->
+    <database name="Trade">
+        <!-- テーブル bot_config -->
+        <table name="bot_config">
+            <column name="key">CHECK_INTERVAL</column>
+            <column name="value">2</column>
+            <column name="ettc">メインループの待機秒数</column>
+        </table>
+        <table name="bot_config">
+            <column name="key">File_Hash</column>
+            <column name="value">1</column>
+            <column name="ettc">ファイルハッシュ:未使用</column>
+        </table>
+        <table name="bot_config">
+            <column name="key">LOT_SIZE</column>
+            <column name="value">1000</column>
+            <column name="ettc">取引をするロットサイズ:使用するAPIの最低量</column>
+        </table>
+        <table name="bot_config">
+            <column name="key">MACD_DIFF_THRESHOLD</column>
+            <column name="value">0.0015</column>
+            <column name="ettc"></column>
+        </table>
+        <table name="bot_config">
+            <column name="key">MAINTENANCE_MARGIN_RATIO</column>
+            <column name="value">0.5</column>
+            <column name="ettc"></column>
+        </table>
+        <table name="bot_config">
+            <column name="key">MAX_LOSS</column>
+            <column name="value">30</column>
+            <column name="ettc"></column>
+        </table>
+        <table name="bot_config">
+            <column name="key">MAX_SPREAD</column>
+            <column name="value">0.008</column>
+            <column name="ettc">許容するスプレッド上限</column>
+        </table>
+        <table name="bot_config">
+            <column name="key">MAX_Stop</column>
+            <column name="value">180</column>
+            <column name="ettc">初動検知後の待機秒数</column>
+        </table>
+        <table name="bot_config">
+            <column name="key">MIN_PROFIT</column>
+            <column name="value">40</column>
+            <column name="ettc">最大利確額(円)</column>
+        </table>
+        <table name="bot_config">
+            <column name="key">SKIP_MODE</column>
+            <column name="value">0</column>
+            <column name="ettc"></column>
+        </table>
+        <table name="bot_config">
+            <column name="key">SYMBOL</column>
+            <column name="value">USD_JPY</column>
+            <column name="ettc"></column>
+        </table>
+        <table name="bot_config">
+            <column name="key">TIME_STOP</column>
+            <column name="value">23</column>
+            <column name="ettc"></column>
+        </table>
+        <table name="bot_config">
+            <column name="key">USD_TIME</column>
+            <column name="value">1</column>
+            <column name="ettc">東京市場専用モードにする場合は0</column>
+        </table>
+        <table name="bot_config">
+            <column name="key">VOL_THRESHOLD</column>
+            <column name="value">0.03</column>
+            <column name="ettc"></column>
+        </table>
+    </database>
+</pma_xml_export>
