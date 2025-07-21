@@ -1,6 +1,7 @@
-requests
-python-dotenv
-pandas
-mysql-connector-python
 pycryptodome
+beautifulsoup4
+python-dotenv
+mysql-connector-python
 numpy
+pandas
+requests
