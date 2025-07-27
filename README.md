@@ -7,19 +7,6 @@ FX AutoTrade System
 
 FX自動売買システムのRPMパッケージとインストールスクリプト一式です。
 
-構成
-----
-RPM/
-├── fx.repo                     # YUM/DNFリポジトリ設定ファイル
-├── fx-autotrade.service        # systemdサービス定義
-├── get_log.py                  # ログ取得スクリプト
-├── install.sh                  # インストールスクリプト
-├── Start.sh                    # サービス起動スクリプト
-├── Update.sh                   # アップデートスクリプト
-├── README.txt                  # 説明書（このファイル）
-├── Package/
-│   ├── fx_autotrade-system-*.rpm # バージョンごとのRPMパッケージ群
-
 インストール手順
 ----------------
 
