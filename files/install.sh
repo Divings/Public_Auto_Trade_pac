@@ -5,3 +5,4 @@ yum makecache
 yum install fx_autotrade-system -y
 cp fx-autotrade.service /etc/systemd/system/
 systemctl daemon-reload
+python3 /opt/Innovations/System/Setup.py
