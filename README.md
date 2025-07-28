@@ -1,24 +1,11 @@
-# Copyright (c) 2025 Innovation Craft Inc. All Rights Reserved.
-# 本ソフトウェアは Innovation Craft Inc. のプロプライエタリライセンスに基づいて提供されています。
-# 本ソフトウェアの使用、複製、改変、再配布には Innovation Craft Inc. の事前の書面による許可が必要です。
+Copyright (c) 2025 Innovation Craft Inc. All Rights Reserved.
+本ソフトウェアは Innovation Craft Inc. のプロプライエタリライセンスに基づいて提供されています。
+本ソフトウェアの使用、複製、改変、再配布には Innovation Craft Inc. の事前の書面による許可が必要です。
 
 FX AutoTrade System
 ====================
 
 FX自動売買システムのRPMパッケージとインストールスクリプト一式です。
-
-構成
-----
-RPM/
-├── fx.repo                     # YUM/DNFリポジトリ設定ファイル
-├── fx-autotrade.service        # systemdサービス定義
-├── get_log.py                  # ログ取得スクリプト
-├── install.sh                  # インストールスクリプト
-├── Start.sh                    # サービス起動スクリプト
-├── Update.sh                   # アップデートスクリプト
-├── README.txt                  # 説明書（このファイル）
-├── Package/
-│   ├── fx_autotrade-system-*.rpm # バージョンごとのRPMパッケージ群
 
 インストール手順
 ----------------
