@@ -32,7 +32,7 @@ python3 -m pip install -r requirements.txt
 
 # スクリプトを所定のディレクトリにコピー
 mkdir -p /opt/tools/
-cp get_logs.py /opt/tools/ # ログ取得スクリプトのコピー
+cp get_log.py /opt/tools/ # ログ取得スクリプトのコピー
 cp Start.sh /opt/tools # 起動スクリプトのコピー
 chmod +x /opt/tools/Start.sh
 
