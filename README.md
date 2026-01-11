@@ -1,6 +1,17 @@
-Copyright (c) 2025 Innovation Craft Inc. All Rights Reserved.
-本ソフトウェアは Innovation Craft Inc. のプロプライエタリライセンスに基づいて提供されています。
-本ソフトウェアの使用、複製、改変、再配布には Innovation Craft Inc. の事前の書面による許可が必要です。
+Copyright (c) 2025 合同会社Anvelk Innovations All Rights Reserved.
+
+本ソフトウェアは合同会社Anvelk Innovationsのプロプライエタリライセンスのもとで提供されています。
+
+学習および閲覧目的に限り、本ソフトウェアおよび関連スクリプトの内容を参照することを許可します。
+また、利用者自身が私的に使用する目的に限り、本ソフトウェアを改変することを許可します。
+
+ただし、改変の有無を問わず、本ソフトウェア（RPMパッケージ、インストールスクリプト、設定ファイル等を含みます）の全部または一部を、
+第三者に対して複製、再配布、公開、販売、共有、再ライセンスすることは禁止されています。
+
+本ソフトウェアの詳細な利用条件については、
+同梱の EULA および LICENSE ファイルを参照してください。
+本ソフトウェア（利用者による改変を含みます）の使用または使用不能により生じたいかなる損害についても、当社は一切の責任を負いません。
+
 
 FX AutoTrade System
 ====================
@@ -52,15 +63,9 @@ FX自動売買システムのRPMパッケージとインストールスクリプ
 
 ログを確認するには：
 
-    sudo python3 RPM/get_log.py
+    sudo python3 /opt/tools/get_log.py
 
 または：
 
     sudo journalctl -u fx-autotrade.service
 
-バージョン
-----------
-
-`RPM/Package/` 以下に複数のバージョンのRPMが同梱されています。必要に応じてお好きなバージョンをインストールしてください。
-なお、同梱されているパッケージ以降のバージョンをインストールする場合は、/opt/Innovations/SystemにあるUpdate.shを
-sudo権限で実行してください
