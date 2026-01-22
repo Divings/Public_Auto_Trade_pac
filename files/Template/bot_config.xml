@@ -35,27 +35,27 @@
         <table name="bot_config">
             <column name="key">MAINTENANCE_MARGIN_RATIO</column>
             <column name="value">0.5</column>
-            <column name="ettc" >証拠金維持率の安全ライン</column>
+            <column name="ettc">証拠金維持率の安全ライン</column>
         </table>
         <table name="bot_config">
             <column name="key">VOL_THRESHOLD</column>
             <column name="value">0.006</column>
-            <column name="ettc" >相場のボラティリティ判定に使用する閾値。</column>
+            <column name="ettc">相場のボラティリティ判定に使用する閾値。</column>
         </table>
         <table name="bot_config">
             <column name="key">TIME_STOP</column>
-            <column name="value">23</column>
-            <column name="ettc" >取引停止時間(未使用)</column>
+            <column name="value">6</column>
+            <column name="ettc">翌日取引開始時間</column>
         </table>
         <table name="bot_config">
             <column name="key">MACD_DIFF_THRESHOLD</column>
             <column name="value">0.0015</column>
-            <column name="ettc" >MACDの差分が有効かどうかを判断するための閾値。</column>
+            <column name="ettc">MACDの差分が有効かどうかを判断するための閾値。</column>
         </table>
         <table name="bot_config">
             <column name="key">SKIP_MODE</column>
             <column name="value">0</column>
-            <column name="ettc" >現在未使用</column>
+            <column name="ettc">指標ブロックを無効化、(非推奨設定:強制テストモード有効化)</column>
         </table>
         <table name="bot_config">
             <column name="key">USD_TIME</column>

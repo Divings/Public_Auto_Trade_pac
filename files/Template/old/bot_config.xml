@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+<?xml version='1.0' encoding='utf-8'?>
+<pma_xml_export version="1.0">
     <database name="Trade">
-        <!-- テーブル bot_config -->
+        
         <table name="bot_config">
             <column name="key">SYMBOL</column>
             <column name="value">USD_JPY</column>
@@ -35,27 +35,27 @@
         <table name="bot_config">
             <column name="key">MAINTENANCE_MARGIN_RATIO</column>
             <column name="value">0.5</column>
-            <column name="ettc"></column>
+            <column name="ettc" >証拠金維持率の安全ライン</column>
         </table>
         <table name="bot_config">
             <column name="key">VOL_THRESHOLD</column>
             <column name="value">0.006</column>
-            <column name="ettc"></column>
+            <column name="ettc" >相場のボラティリティ判定に使用する閾値。</column>
         </table>
         <table name="bot_config">
             <column name="key">TIME_STOP</column>
             <column name="value">23</column>
-            <column name="ettc"></column>
+            <column name="ettc" >取引停止時間(未使用)</column>
         </table>
         <table name="bot_config">
             <column name="key">MACD_DIFF_THRESHOLD</column>
             <column name="value">0.0015</column>
-            <column name="ettc"></column>
+            <column name="ettc" >MACDの差分が有効かどうかを判断するための閾値。</column>
         </table>
         <table name="bot_config">
             <column name="key">SKIP_MODE</column>
             <column name="value">0</column>
-            <column name="ettc"></column>
+            <column name="ettc" >現在未使用</column>
         </table>
         <table name="bot_config">
             <column name="key">USD_TIME</column>
