@@ -1,0 +1,7 @@
+pycryptodome
+beautifulsoup4
+python-dotenv
+mysql-connector-python
+numpy
+pandas
+requests

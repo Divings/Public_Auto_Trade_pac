@@ -1,0 +1,20 @@
+[Unit]
+Description=GMO Coin FX AutoTrade Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/Innovations/System
+
+# 署名検証コマンド
+ExecStartPre=/usr/bin/python3 Auth.py
+ExecStart=/usr/bin/python3 AutoTrade.py
+
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
+
