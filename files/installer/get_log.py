@@ -3,24 +3,10 @@ import re
 from datetime import datetime, timedelta
 
 def get_fx_debug_log(
-    last_temp_path="/opt/Innovations/System/last_temp/last_temp.txt",
-    target_filename="fx_debug_log.txt"
+    target_filename="/var/log/AutoTrade/fx_debug_log.txt"
 ):
-    if not os.path.exists(last_temp_path):
-        print(f"[エラー] 記録ファイルが存在しません: {last_temp_path}")
-        return
-
     try:
-        with open(last_temp_path, "r") as f:
-            content = f.read()
-
-        match = re.search(r'(/tmp/[^\s]+)', content)
-        if not match:
-            print("[エラー] 一時ディレクトリのパスが見つかりませんでした。")
-            return
-
-        temp_dir = match.group(1)
-        log_path = os.path.join(temp_dir, target_filename)
+        log_path = target_filename
 
         if not os.path.isfile(log_path):
             print(f"[エラー] ログファイルが見つかりません: {log_path}")
