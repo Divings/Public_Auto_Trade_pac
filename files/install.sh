@@ -21,14 +21,7 @@ yum install -y python3-pip fx_autotrade-system
 # GPGのインストール
 yum install -y gpg 
 
-# systemd サービスの登録
-cp fx-autotrade.service /etc/systemd/system/
-systemctl daemon-reload
 systemctl enable fx-autotrade.service
-
-# Python依存パッケージをインストール
-python3 -m pip install --upgrade pip
-python3 -m pip install -r requirements.txt
 
 # スクリプトを所定のディレクトリにコピー
 mkdir -p /opt/tools/
@@ -38,6 +31,7 @@ chmod +x /opt/tools/Start.sh
 
 # ディレクトリ移動
 cd /opt/Innovations/System/
-# セットアップスクリプトの実行
-python3 /opt/Innovations/System/Setup.py
+
+# セットアップの実行
+sudo ./AutoTrade --setup
 

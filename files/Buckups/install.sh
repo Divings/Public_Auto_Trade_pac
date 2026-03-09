@@ -27,8 +27,8 @@ systemctl daemon-reload
 systemctl enable fx-autotrade.service
 
 # Python依存パッケージをインストール
-# python3 -m pip install --upgrade pip
-# python3 -m pip install -r requirements.txt
+python3 -m pip install --upgrade pip
+python3 -m pip install -r requirements.txt
 
 # スクリプトを所定のディレクトリにコピー
 mkdir -p /opt/tools/

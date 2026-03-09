@@ -20,7 +20,7 @@ def get_fx_debug_log(
             return
 
         temp_dir = match.group(1)
-        log_path = os.path.join(temp_dir, target_filename)
+        log_path = "/var/log/AutoTrade/" + target_filename
 
         if not os.path.isfile(log_path):
             print(f"[エラー] ログファイルが見つかりません: {log_path}")
