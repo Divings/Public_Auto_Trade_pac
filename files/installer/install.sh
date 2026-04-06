@@ -10,10 +10,10 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # リポジトリを追加
-# cp fx.repo /etc/yum.repos.d/
+cp fx.repo /etc/yum.repos.d/
 
 # キャッシュを更新
-# yum makecache
+yum makecache
 
 # RPMパッケージと依存パッケージをインストール
 yum install -y python3-pip
@@ -24,7 +24,6 @@ systemctl enable fx-autotrade.service
 
 # スクリプトを所定のディレクトリにコピー
 mkdir -p /opt/tools/
-cp get_log.py /opt/tools/ # ログ取得スクリプトのコピー
 cp Start.sh /opt/tools # 起動スクリプトのコピー
 chmod +x /opt/tools/Start.sh
 
