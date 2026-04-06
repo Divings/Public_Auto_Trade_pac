@@ -46,7 +46,7 @@ RPM/
     sudo bash Start.sh
 
 または直接systemdで起動する場合：
-
+    sudo chown -R autotrade:autotrade /etc/AutoTrade/aes_key.bin
     sudo systemctl start fx-autotrade.service
     sudo systemctl enable fx-autotrade.service
 

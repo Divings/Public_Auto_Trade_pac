@@ -1,5 +1,5 @@
 [AutoTrade]
-name=fx-Auto Trade System Repos
+name=FX-Auto Trade System Repos
 baseurl=https://anvelk.jp/repo
 enabled=1
 gpgcheck=0

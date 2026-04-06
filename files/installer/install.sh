@@ -10,16 +10,15 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # リポジトリを追加
-cp fx.repo /etc/yum.repos.d/
+# cp fx.repo /etc/yum.repos.d/
 
 # キャッシュを更新
-yum makecache
+# yum makecache
 
 # RPMパッケージと依存パッケージをインストール
-yum install -y python3-pip fx_autotrade-system
+yum install -y python3-pip
 
-# GPGのインストール
-yum install -y gpg 
+sudo yum install -y ./fx_autotrade-system-524.11.0-2.el9.x86_64.rpm
 
 systemctl enable fx-autotrade.service
 
@@ -35,3 +34,5 @@ cd /opt/Innovations/System/
 # セットアップの実行
 sudo ./AutoTrade --setup
 
+chown -R autotrade:autotrade /etc/AutoTrade/aes_key.bin
+chown -R autotrade:autotrade /etc/AutoTrade/api_settings.db
