@@ -6,6 +6,13 @@ import getpass
 script_path = os.path.abspath(sys.argv[0])
 script_dir = os.path.dirname(script_path)
 
+import secrets
+import string
+
+def generate_password(length=16):
+    chars = string.ascii_letters + string.digits
+    return ''.join(secrets.choice(chars) for _ in range(length))
+
 os.chdir(script_dir)
 
 if os.path.exists('IV-AutoTrade.zip'):
@@ -37,8 +44,12 @@ def zip_with_password(input_dir, output_zip, password):
         password,
         5
     )
-    
-password = getpass.getpass(" パスワードを入力してください >> ")
+
+password = generate_password()
+with open("password.txt", "w", encoding="utf-8") as f:
+    f.write(password)
 
 # 使い方
 zip_with_password('installer', './IV-AutoTrade.zip', password)
+print(" IV-AutoTrade.zipを作成しました。")
+input(" >>")    
